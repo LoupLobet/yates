@@ -27,7 +27,7 @@ Acquiring a mutex returns a UUID that must be used to release the mutex (in orde
 ```
 
 ### Wait for mutex
-Trying to acquire already own mutex will block the acquiring programm, until mutex is released.
+Trying to acquire already own mutex will block the acquiring program until mutex is released.
 ```
 % 9p read yates/foo
 ...
@@ -39,7 +39,7 @@ To release a mutex, write the associated UUID in it.
 % echo 95fdc5ed-808a-4613-bbd6-d9249d5dc022 |9p write yates/foo
 %
 ```
-Now the mutex is released the other programm acquieres it.
+Now the mutex is released the other program acquieres it.
 ```
 % 9p read yates/foo
 ...
