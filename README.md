@@ -26,7 +26,7 @@ Acquiring a mutex returns a UUID that must be used to release the mutex (in orde
 %
 ```
 
-### Waiting for mutex
+### Wait for mutex
 Trying to acquire already own mutex will block the acquiring programm, until mutex is released.
 ```
 % 9p read yates/foo
